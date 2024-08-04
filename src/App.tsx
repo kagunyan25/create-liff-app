@@ -25,13 +25,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>create-liff-app</h1>
+      <h1>kagunyan-create-liff-app</h1>
       {message && <p>{message}</p>}
       {error && (
         <p>
           <code>{error}</code>
         </p>
       )}
+      {isReady && liff.isLoggedIn() && <p>ログイン中です！</p>}
       {isReady && <Button />}
       <br />
       <a
